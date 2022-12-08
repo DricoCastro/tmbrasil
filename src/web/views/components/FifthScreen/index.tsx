@@ -6,9 +6,12 @@ import {
 } from "./styles";
 
 export const FifthScreen = () => {
+  function onTapCluberCerto() {
+    window.open("https://clubecerto.com.br/");
+  }
   return (
     <FifthScreenHolder>
-      <FifthScreenTitle>
+      <FifthScreenTitle onClick={onTapCluberCerto}>
         Clube certo, descontos e benefícios para todo mundo aproveitar
       </FifthScreenTitle>
       <FifthScreenSubTitle>

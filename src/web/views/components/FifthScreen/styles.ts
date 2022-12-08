@@ -15,7 +15,11 @@ padding-bottom:50px;
 `;
 
 export const FifthScreenTitle = styled.h2`
+cursor:pointer;
 font-size:24px;
+:hover{
+  border-bottom:1px solid var(--scooter);
+}
 @media (max-width: 1100px) {
     font-size:20px;
   }

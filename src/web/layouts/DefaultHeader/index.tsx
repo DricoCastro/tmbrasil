@@ -42,6 +42,13 @@ export const DefaultHeader = () => {
     router.push("/");
   }
 
+  function onTapCluberCerto() {
+    window.open("https://clubecerto.com.br/");
+  }
+  function onTapUser() {
+    window.open("https://vscofano.github.io/TM-login/login.html");
+  }
+
   return (
     <HomeHeaderHolder>
       <HeaderContainer>
@@ -92,7 +99,7 @@ export const DefaultHeader = () => {
             <TitlesHeader>Benefícios</TitlesHeader>
           </HolderTitleIcon>
 
-          <HolderTitleIcon onClick={onTapMenu}>
+          <HolderTitleIcon onClick={onTapCluberCerto}>
             <PrimaryIcon
               size={"16px"}
               icon={IconsEnum.RIGHT_CLUB_ICON}
@@ -102,7 +109,7 @@ export const DefaultHeader = () => {
             <TitleHeaderMoney>Clube Certo</TitleHeaderMoney>
           </HolderTitleIcon>
 
-          <HolderTitleIcon onClick={onTapMenu}>
+          <HolderTitleIcon onClick={onTapUser}>
             <PrimaryIcon
               size={"16px"}
               icon={IconsEnum.USER_ICON}
@@ -208,7 +215,7 @@ export const DefaultHeader = () => {
 
             <Divider />
 
-            <MenuItemStyledComponent onClick={onTapMenu}>
+            <MenuItemStyledComponent onClick={onTapCluberCerto}>
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.RIGHT_CLUB_ICON}
@@ -219,7 +226,7 @@ export const DefaultHeader = () => {
 
             <Divider />
 
-            <MenuItemStyledComponent onClick={onTapMenu}>
+            <MenuItemStyledComponent onClick={onTapUser}>
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.USER_ICON}

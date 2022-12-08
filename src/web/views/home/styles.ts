@@ -8,4 +8,5 @@ export const HomeHolder = styled.div`
     align-items:center;
     justify-content:center;
     min-width:100%;
+    row-gap:150px;
 `;

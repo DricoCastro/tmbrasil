@@ -6,6 +6,7 @@ import {
   CardDescription,
   FourthScreenHolder,
   HolderCards,
+  HolderDivider,
   HolderLeftSide,
   HolderRightSide,
   HolderTop,
@@ -42,19 +43,54 @@ export const FourthScreen = () => {
           <Image width={50} src={userIcon} alt="userIcon" />
           <CardDescription>Sem análise de perfil</CardDescription>
         </Card>
+        <HolderDivider>
+          <Divider
+            style={{
+              backgroundColor: `${COLORS.scooter}`,
+              width: "80%",
+              height: "1.5px",
+            }}
+          />
+        </HolderDivider>
         <Card>
           <Image width={110} src={carIcon} alt="carIcon" />
           <CardDescription>Carro reserva</CardDescription>
         </Card>
-
+        <HolderDivider>
+          <Divider
+            style={{
+              backgroundColor: `${COLORS.scooter}`,
+              width: "80%",
+              height: "1.5px",
+            }}
+          />
+        </HolderDivider>
         <Card>
           <Image width={80} src={cardNameIcon} alt="cardNameIcon" />
           <CardDescription>Sem consulta ao SPC </CardDescription>
         </Card>
+        <HolderDivider>
+          <Divider
+            style={{
+              backgroundColor: `${COLORS.scooter}`,
+              width: "80%",
+              height: "1.5px",
+            }}
+          />
+        </HolderDivider>
         <Card>
           <Image width={70} src={searchCarIcon} alt="searchCarIcon" />
           <CardDescription>Rastreador para veículos</CardDescription>
         </Card>
+        <HolderDivider>
+          <Divider
+            style={{
+              backgroundColor: `${COLORS.scooter}`,
+              width: "80%",
+              height: "1.5px",
+            }}
+          />
+        </HolderDivider>
         <Card>
           <Image width={60} src={justiceIcon} alt="searchCarIcon" />
           <CardDescription>Assistência jurídica</CardDescription>

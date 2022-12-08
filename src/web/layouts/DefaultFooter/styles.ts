@@ -1,10 +1,11 @@
 import styled from "styled-components"
+import { COLORS } from "../../../../utils/colors";
 
 export const HomeFooterHolder = styled.div`
     display: flex;
     justify-content: center;
     align-items:center;
-    background-color: var(--codGray);
+    background-color: ${COLORS.codGray};
     padding-left: clamp(1rem, 10.42vw, 12.5rem);
     padding-right: clamp(1rem, 10.42vw, 12.5rem);
 
@@ -42,6 +43,15 @@ export const PanelFooterTopContainer = styled.div`
                     font-size:14px;
             }
         }
+`; 
+
+export const HolderLogo = styled.div`
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    padding:10px 20px;
+    border-radius:5px;
+    background-color:${COLORS.alabaster};
 `; 
 
 export const PanelFooterBottomContainer = styled.div`

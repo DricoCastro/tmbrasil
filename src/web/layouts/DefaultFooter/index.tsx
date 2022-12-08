@@ -3,6 +3,7 @@ import { PrimaryIcon } from "../../components/PrimaryIcon";
 import { IconsEnum } from "../../components/PrimaryIcon/enum/icons";
 import Image from "next/image";
 import {
+  HolderLogo,
   HomeFooterHolder,
   PanelFooterBottomContainer,
   PanelFooterBottomLinksUlContainer,
@@ -26,15 +27,18 @@ export const DeafultFooter = () => {
     <HomeFooterHolder>
       <PanelFooterContainer>
         <PanelFooterTopContainer>
-          <Image
-            onClick={onTapHomePage}
-            style={{ cursor: "pointer" }}
-            src={logo}
-            alt="logoHeader"
-            width={100}
-            height={100}
-          />
-          <span>Universo Jardinagem S.A. © Copyright 2022</span>
+          <HolderLogo>
+            <Image
+              onClick={onTapHomePage}
+              style={{ cursor: "pointer" }}
+              src={logo}
+              alt="logoHeader"
+              width={160}
+              height={80}
+            />
+          </HolderLogo>
+
+          <span>TM Brasil Proteção Veicular S.A. © Copyright 2022</span>
         </PanelFooterTopContainer>
         <PanelFooterBottomContainer>
           <PanelFooterBottomLinksUlContainer>
@@ -42,16 +46,19 @@ export const DeafultFooter = () => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/servicos-prestados">Serviços</Link>
+              <Link href="/">Regulamento</Link>
             </li>
             <li>
-              <Link href="/">Portfólio</Link>
+              <Link href="/">TM Brasil</Link>
             </li>
             <li>
-              <Link href="/">Orçamento</Link>
+              <Link href="/">Benefícios</Link>
             </li>
             <li>
-              <Link href="/">Loja</Link>
+              <Link href="/">Clube Certo</Link>
+            </li>
+            <li>
+              <Link href="/">Associado</Link>
             </li>
           </PanelFooterBottomLinksUlContainer>
           <PanelFooterBottomSocialMediaContainerHolder>

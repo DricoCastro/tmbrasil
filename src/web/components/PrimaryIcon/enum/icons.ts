@@ -4,8 +4,9 @@ export enum IconsEnum {
   WHATSAPP_ICON = "whatsapp_icon",
   MENU_ICON     = "menu_icon",
   HOME_ICON = "home_icon",
-  CART_STORE_ICON = "cart_store_icon",
-  CIPHER_ICON = "cipher_icon",
-  SERVICES_ICON = "services_icon",
-  PORTFOLIO_ICON = "portfolio_icon",
+  USER_ICON = "user_icon",
+  RIGHT_CLUB_ICON = "right_club_icon",
+  TMBRASIL_ICON = "tmbrasil_icon",
+  BENEFITS_ICON = "benefits_icon",
+  BOOK_ICON = "book_icon",
 }

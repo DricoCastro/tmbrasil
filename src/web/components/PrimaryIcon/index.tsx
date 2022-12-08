@@ -1,15 +1,16 @@
 import { SVGProps } from "react";
 import { IconsEnum } from "./enum/icons";
-import CartStoreIcon from "./Icons/cart_store_icon";
-import CipherIcon from "./Icons/cipher_icon";
+import UserIcon from "./Icons/user_icon";
+import RightClub from "./Icons/right_club_icon";
 import FacebookIcon from "./Icons/facebook_icon";
 import HomeIcon from "./Icons/home_icon";
 import InstagramIcon from "./Icons/instagram_icon";
 import MenuIcon from "./Icons/menu_icon";
-import PortfolioIcon from "./Icons/portfolio_icon";
-import ServicesIcon from "./Icons/services_icon";
+import BenefitsIcon from "./Icons/benefits_icon";
+import TmBrasilIcon from "./Icons/tmbrasil_icon";
 import WhatsappIcon from "./Icons/whatsapp_icon";
 import { PrimaryIconContainer } from "./styles";
+import BookIcon from "./Icons/book_icon";
 
 interface IconFromEnum extends SVGProps<SVGSVGElement> {
   icon_enum: IconsEnum;
@@ -31,17 +32,20 @@ const IconFromEnum = (props: IconFromEnum) => {
     case IconsEnum.HOME_ICON:
       return <HomeIcon {...props} />;
 
-    case IconsEnum.CART_STORE_ICON:
-      return <CartStoreIcon {...props} />;
+    case IconsEnum.USER_ICON:
+      return <UserIcon {...props} />;
 
-    case IconsEnum.CIPHER_ICON:
-      return <CipherIcon {...props} />;
+    case IconsEnum.RIGHT_CLUB_ICON:
+      return <RightClub {...props} />;
 
-    case IconsEnum.SERVICES_ICON:
-      return <ServicesIcon {...props} />;
+    case IconsEnum.TMBRASIL_ICON:
+      return <TmBrasilIcon {...props} />;
 
-    case IconsEnum.PORTFOLIO_ICON:
-      return <PortfolioIcon {...props} />;
+    case IconsEnum.BENEFITS_ICON:
+      return <BenefitsIcon {...props} />;
+
+    case IconsEnum.BOOK_ICON:
+      return <BookIcon {...props} />;
   }
 };
 

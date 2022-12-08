@@ -15,9 +15,10 @@ export const HomeHeaderHolder = styled.div`
     -ms-user-select: none;
     user-select: none;
     color:${COLORS.mirage};
-    @media (max-width: 599px) {
-    padding-left: 10px;
-    padding-right: 10px;
+    background-color:${COLORS.alabaster};
+    @media (max-width: 1100px) {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 `;
 
@@ -31,13 +32,13 @@ export const HeaderContainer = styled.div`
 
 export const HolderMenuIcon = styled.div`
 display:none;
-  @media (max-width: 900px) {
+  @media (max-width: 1250px) {
     display:flex;
   }
 `;
 
 export const HolderLogoHeader = styled.div`
-  width:35%;
+  width:20%;
   display:flex;
   align-items:flex-start;
   @media (max-width: 1250px) {
@@ -46,14 +47,11 @@ export const HolderLogoHeader = styled.div`
 `;
 
 export const HolderTitlesHeader = styled.div`
-  width:65%;
+  width:80%;
   display:flex;
   flex-direction:row;
   align-items:center;
   justify-content:space-between;
-  @media (max-width: 1250px) {
-    width:75%;
-  }
 `;
 
 export const HolderTitleIcon = styled.div`
@@ -83,14 +81,14 @@ h1:hover:after {
   width: 100%; 
   left: 0; 
 }
-  @media (max-width: 900px) {
+  @media (max-width: 1250px) {
     display:none;
   }
 
 `;
 
 export const TitlesHeader = styled.h1`
-  font-size:18px;
+  font-size:16px;
   font-weight:500;
   margin-left:8px;
   padding-top:4px;
@@ -104,7 +102,7 @@ export const TitlesHeader = styled.h1`
 `;
 
 export const TitleHeaderMoney = styled.h1`
-  font-size:18px;
+  font-size:16px;
   font-weight:500;
   margin-left:8px;
   padding-top:4px;
@@ -124,10 +122,10 @@ export const MenuItemStyledComponent = styled.div`
   justify-content: flex-start;
   align-items: center;
   text-align: end;
-  padding-left: 10px;
+  padding-left: 15px;
   padding-right: 10px;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-top: 12px;
   cursor: pointer;
 `;
 
@@ -136,6 +134,11 @@ font-size:16px;
 font-weight:600;
 margin-left:15px;
 `;
+
+export const TesteImg = styled.img`
+
+`;
+
 
 
 

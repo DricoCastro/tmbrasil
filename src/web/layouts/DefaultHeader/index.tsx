@@ -42,10 +42,6 @@ export const DefaultHeader = () => {
     router.push("/");
   }
 
-  function onTapServicesPage() {
-    router.push("/servicos-prestados");
-  }
-
   return (
     <HomeHeaderHolder>
       <HeaderContainer>
@@ -55,55 +51,64 @@ export const DefaultHeader = () => {
             style={{ cursor: "pointer" }}
             src={logo}
             alt="logoHeader"
-            width={80}
-            height={80}
+            width={140}
+            height={60}
           />
         </HolderLogoHeader>
         <HolderTitlesHeader>
           <HolderTitleIcon onClick={onTapHomePage}>
             <PrimaryIcon
-              size={"18px"}
+              size={"16px"}
               icon={IconsEnum.HOME_ICON}
               fill={COLORS.scooter}
             />
             <TitlesHeader>HOME</TitlesHeader>
           </HolderTitleIcon>
 
-          <HolderTitleIcon onClick={onTapServicesPage}>
+          <HolderTitleIcon onClick={onTapMenu}>
             <PrimaryIcon
-              size={"18px"}
-              icon={IconsEnum.SERVICES_ICON}
+              size={"16px"}
+              icon={IconsEnum.BOOK_ICON}
               fill={COLORS.scooter}
             />
-            <TitlesHeader>SERVIÇOS</TitlesHeader>
+            <TitlesHeader>Regulamento</TitlesHeader>
           </HolderTitleIcon>
 
           <HolderTitleIcon onClick={onTapMenu}>
             <PrimaryIcon
-              size={"18px"}
-              icon={IconsEnum.PORTFOLIO_ICON}
+              size={"20px"}
+              icon={IconsEnum.TMBRASIL_ICON}
               fill={COLORS.scooter}
             />
-            <TitlesHeader>PORTFÓLIO</TitlesHeader>
+            <TitlesHeader>TM BRASIL</TitlesHeader>
           </HolderTitleIcon>
 
           <HolderTitleIcon onClick={onTapMenu}>
             <PrimaryIcon
-              size={"18px"}
-              icon={IconsEnum.CIPHER_ICON}
+              size={"16px"}
+              icon={IconsEnum.BENEFITS_ICON}
+              fill={COLORS.scooter}
+            />
+            <TitlesHeader>Benefícios</TitlesHeader>
+          </HolderTitleIcon>
+
+          <HolderTitleIcon onClick={onTapMenu}>
+            <PrimaryIcon
+              size={"16px"}
+              icon={IconsEnum.RIGHT_CLUB_ICON}
               stroke={COLORS.scooter}
               fill={COLORS.scooter}
             />
-            <TitleHeaderMoney>ORÇAMENTO</TitleHeaderMoney>
+            <TitleHeaderMoney>Clube Certo</TitleHeaderMoney>
           </HolderTitleIcon>
 
           <HolderTitleIcon onClick={onTapMenu}>
             <PrimaryIcon
-              size={"18px"}
-              icon={IconsEnum.CART_STORE_ICON}
+              size={"16px"}
+              icon={IconsEnum.USER_ICON}
               fill={COLORS.scooter}
             />
-            <TitlesHeader>LOJA</TitlesHeader>
+            <TitlesHeader>Associado</TitlesHeader>
           </HolderTitleIcon>
         </HolderTitlesHeader>
         <HolderMenuIcon>
@@ -133,13 +138,13 @@ export const DefaultHeader = () => {
             sx: {
               overflow: "visible",
               filter: "drop-shadow(0px 2px 6px var(--parsley))",
-              borderRadius: "5px",
-              width: "200px",
+              borderRadius: "10px",
+              width: "230px",
               display: "flex",
               justifyContent: "flex-end",
               alignItems: "center",
               mt: 1.5,
-              "@media (min-width: 900px)": {
+              "@media (min-width: 1250px)": {
                 display: "none",
               },
               "&:before": {
@@ -169,16 +174,14 @@ export const DefaultHeader = () => {
               />
               <TitleMenuDrawer>Home</TitleMenuDrawer>
             </MenuItemStyledComponent>
-
-            <Divider style={{ width: "200px" }} />
-
-            <MenuItemStyledComponent onClick={onTapServicesPage}>
+            <Divider style={{ width: "230px" }} />
+            <MenuItemStyledComponent onClick={onTapMenu}>
               <PrimaryIcon
                 size={"18px"}
-                icon={IconsEnum.SERVICES_ICON}
+                icon={IconsEnum.BOOK_ICON}
                 fill={COLORS.scooter}
               />
-              <TitleMenuDrawer>Serviços</TitleMenuDrawer>
+              <TitleMenuDrawer>Regulamento</TitleMenuDrawer>
             </MenuItemStyledComponent>
 
             <Divider />
@@ -186,10 +189,10 @@ export const DefaultHeader = () => {
             <MenuItemStyledComponent onClick={onTapMenu}>
               <PrimaryIcon
                 size={"18px"}
-                icon={IconsEnum.PORTFOLIO_ICON}
+                icon={IconsEnum.TMBRASIL_ICON}
                 fill={COLORS.scooter}
               />
-              <TitleMenuDrawer>Portifólio</TitleMenuDrawer>
+              <TitleMenuDrawer>TM Brasil</TitleMenuDrawer>
             </MenuItemStyledComponent>
 
             <Divider />
@@ -197,10 +200,10 @@ export const DefaultHeader = () => {
             <MenuItemStyledComponent onClick={onTapMenu}>
               <PrimaryIcon
                 size={"18px"}
-                icon={IconsEnum.CIPHER_ICON}
+                icon={IconsEnum.BENEFITS_ICON}
                 fill={COLORS.scooter}
               />
-              <TitleMenuDrawer>Orçamento</TitleMenuDrawer>
+              <TitleMenuDrawer>Benefícios</TitleMenuDrawer>
             </MenuItemStyledComponent>
 
             <Divider />
@@ -208,10 +211,21 @@ export const DefaultHeader = () => {
             <MenuItemStyledComponent onClick={onTapMenu}>
               <PrimaryIcon
                 size={"18px"}
-                icon={IconsEnum.CART_STORE_ICON}
+                icon={IconsEnum.RIGHT_CLUB_ICON}
                 fill={COLORS.scooter}
               />
-              <TitleMenuDrawer>Loja</TitleMenuDrawer>
+              <TitleMenuDrawer>Clube Certo</TitleMenuDrawer>
+            </MenuItemStyledComponent>
+
+            <Divider />
+
+            <MenuItemStyledComponent onClick={onTapMenu}>
+              <PrimaryIcon
+                size={"18px"}
+                icon={IconsEnum.USER_ICON}
+                fill={COLORS.scooter}
+              />
+              <TitleMenuDrawer>Associado</TitleMenuDrawer>
             </MenuItemStyledComponent>
           </div>
         </Menu>

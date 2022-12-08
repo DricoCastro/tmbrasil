@@ -7,7 +7,7 @@ export const COLORS = {
   black: "#000000",
   red: "#FF0000",
   gallery: "#ECECEC",
-  alabaster: "#FCFCFC",
+  alabaster: "#f7f7f7",
   alabasterDark: "#F5F5F5",
   mirage: "#181924",
   gray: "#8E8E8E",

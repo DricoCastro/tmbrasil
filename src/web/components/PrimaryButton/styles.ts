@@ -9,12 +9,12 @@ export const PrimaryButtonContainer = styled.button`
     padding-right:25px;
     padding-top:12px;
     padding-bottom:12px;
-    background-color:${COLORS.crete};
+    background-color:${COLORS.scooter};
     border-radius:5px;
     transition: 0.05s ease-out;
   :hover{
-    box-shadow: 0 3px 10px ${COLORS.celtic};
-    transform: translate3d(0,-5px,0);
+    box-shadow: 0 1px 3px ${COLORS.mirage};
+    transform: translate3d(0,-2px,0);
   }
     @media (max-width: 599px) {
     transition: none;

@@ -27,13 +27,13 @@ export const FirstScreen = () => {
       <HolderLeftSide>
         <HolderTexts>
           <TextTitle>
-            Proteção Veicular é TM Brasil Clube e Beneficios
+            Proteção Veicular é TM Brasil Clube e Benefícios
           </TextTitle>
           <Divider
             style={{ width: "150px", backgroundColor: `${COLORS.scooter}` }}
           />
           <TextSubtitle>
-            Contar com ATENDIMENTO e toda Segurança atraves de uma cobertura 24
+            Contar com ATENDIMENTO e toda Segurança através de uma cobertura 24
             horas.
           </TextSubtitle>
         </HolderTexts>

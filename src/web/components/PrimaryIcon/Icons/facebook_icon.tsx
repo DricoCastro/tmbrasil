@@ -1,19 +1,18 @@
 import * as React from "react";
 import { SVGProps } from "react";
 
-const FacebookIcon = (props: SVGProps<SVGSVGElement>) => (
+const EmailIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
+    data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 122.88 85.57"
     width="100%"
     height="100%"
-    viewBox="0 0 8.76 17"
     {...props}
   >
-    <path
-      d="M59.483 32.661V29.9l-3.009-.026a3.489 3.489 0 0 0-3.108 3.1v2.959H50.72v3.134h2.608v7.77h3.083v-7.815h2.724l.347-3.061h-3.034v-2.253a1.041 1.041 0 0 1 1.015-1.069c.407.006 2.02.022 2.02.022Z"
-      transform="translate(-50.72 -29.87)"
-    />
+    <title>{"mail"}</title>
+    <path d="m3.8 0 58.68 47.85L118.65 0ZM0 80.52l41.8-41.91L0 4.53v76Zm46.41-38.15-43.1 43.2h115.9L78 42.37 64.44 53.94a3 3 0 0 1-3.78.05L46.41 42.37Zm36.12-3.84 40.35 42.33V4.16L82.53 38.53Z" />
   </svg>
 );
 
-export default FacebookIcon;
+export default EmailIcon;

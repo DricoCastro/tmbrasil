@@ -1,0 +1,14 @@
+.arrows{
+    display: block;
+}
+
+.arrows::before{
+    color: var(--scooter);
+}
+
+@media (max-width: 650px) {
+    .arrows{
+        display: none;
+    }
+    
+}

@@ -1,10 +1,14 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import logoData from "./data";
+import logoData from "./components/carousel/data";
 import styles from "./StylesArrow.module.css";
 import clsx from "clsx";
-import { HolderCarousel, PageHolder, HolderCard } from "./styles";
+import {
+  HolderCarousel,
+  PageHolder,
+  HolderCard,
+} from "./components/carousel/styles";
 import Image from "next/image";
 
 export default function ImagesCarousel() {

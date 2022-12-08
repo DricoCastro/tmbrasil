@@ -1,0 +1,19 @@
+.customShapeDividerTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.customShapeDividerTop svg {
+    position: relative;
+    display: block;
+    width: calc(145% + 1.3px);
+    height: 112px;
+}
+
+.customShapeDividerTop .shapeFill {
+    fill: var(--scooter);
+}

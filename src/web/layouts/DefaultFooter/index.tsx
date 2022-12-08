@@ -17,6 +17,7 @@ import { COLORS } from "../../../../utils/colors";
 import { useRouter } from "next/router";
 
 const logo = require("../../../../public/images/logo-tm-brasil.jpeg");
+const wave = require("../../../../public/images/wavesDivider.svg");
 
 export const DeafultFooter = () => {
   const router = useRouter();
@@ -37,7 +38,6 @@ export const DeafultFooter = () => {
               height={80}
             />
           </HolderLogo>
-
           <span>TM Brasil Proteção Veicular S.A. © Copyright 2022</span>
         </PanelFooterTopContainer>
         <PanelFooterBottomContainer>
@@ -69,7 +69,7 @@ export const DeafultFooter = () => {
                   <PrimaryIcon
                     size="18px"
                     fill={COLORS.scooter}
-                    icon={IconsEnum.FACEBOOK_ICON}
+                    icon={IconsEnum.EMAIL_ICON}
                   />
                 </Link>
               </PanelFooterBottomSocialMediaButtonContainer>

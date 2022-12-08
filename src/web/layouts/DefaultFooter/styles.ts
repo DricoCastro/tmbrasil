@@ -120,3 +120,4 @@ export const PanelFooterBottomSocialMediaButtonContainer = styled.div`
         margin-left: clamp(1.46vw, 1.46vw, 1.75rem);
     }
 `;
+

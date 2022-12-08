@@ -6,16 +6,25 @@ align-items:center;
 justify-content:center;
 width:100%;
 padding-top: 40px;
+margin-bottom:-62px;
 padding-left: clamp(1rem, 10.42vw, 12.5rem);
 padding-right: clamp(1rem, 10.42vw, 12.5rem);
 @media (max-width: 1100px) {
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom:-68px;
+  }
+  @media (max-width: 899px) {
+    margin-bottom:-70px;
+  }
+  @media (max-width: 599px) {
+    margin-bottom:0px;
   }
 `;
 
 export const HolderLeftSide = styled.div`
 width:70%;
+margin-bottom:10px;
 @media (max-width: 699px) {
     width:100%;
     display:flex;

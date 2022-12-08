@@ -9,6 +9,8 @@ flex-direction:column;
 width:100%;
 padding-left: clamp(1rem, 10.42vw, 12.5rem);
 padding-right: clamp(1rem, 10.42vw, 12.5rem);
+padding-top:30px;
+padding-bottom:30px;
 @media (max-width: 1100px) {
     padding-left: 15px;
     padding-right: 15px;

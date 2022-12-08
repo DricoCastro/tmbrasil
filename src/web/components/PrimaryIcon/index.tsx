@@ -11,14 +11,15 @@ import TmBrasilIcon from "./Icons/tmbrasil_icon";
 import WhatsappIcon from "./Icons/whatsapp_icon";
 import { PrimaryIconContainer } from "./styles";
 import BookIcon from "./Icons/book_icon";
+import EmailIcon from "./Icons/facebook_icon";
 
 interface IconFromEnum extends SVGProps<SVGSVGElement> {
   icon_enum: IconsEnum;
 }
 const IconFromEnum = (props: IconFromEnum) => {
   switch (props.icon_enum) {
-    case IconsEnum.FACEBOOK_ICON:
-      return <FacebookIcon {...props} />;
+    case IconsEnum.EMAIL_ICON:
+      return <EmailIcon {...props} />;
 
     case IconsEnum.INSTAGRAM_ICON:
       return <InstagramIcon {...props} />;

@@ -25,6 +25,8 @@ export const SecondScreen = () => {
             borderRadius: "10px",
             width: "90%",
             height: "80%",
+            boxShadow:
+              " rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
           }}
         />
       </HolderLeftSide>
@@ -59,7 +61,7 @@ export const SecondScreen = () => {
             <BenefictsListItems>Comunicação Eficiente</BenefictsListItems>
           </BenefictsList>
         </HolderTexts>
-        <PrimaryButton text="botão" onClick={() => {}} />
+        <PrimaryButton text="Faça uma cotação agora!" onClick={() => {}} />
       </HolderRightSide>
     </SecondScreenHolder>
   );

@@ -1,5 +1,5 @@
 export enum IconsEnum {
-  FACEBOOK_ICON = "facebook_icon",
+  EMAIL_ICON = "email_icon",
   INSTAGRAM_ICON = "instagram_icon",
   WHATSAPP_ICON = "whatsapp_icon",
   MENU_ICON     = "menu_icon",

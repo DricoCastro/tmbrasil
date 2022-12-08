@@ -2,7 +2,11 @@ import { Divider } from "@mui/material";
 import Image from "next/image";
 import { COLORS } from "../../../../../utils/colors";
 import {
-  Card,
+  Card1,
+  Card2,
+  Card3,
+  Card4,
+  Card5,
   CardDescription,
   FourthScreenHolder,
   HolderCards,
@@ -34,15 +38,21 @@ export const FourthScreen = () => {
           <Image
             src={imgFourthScreen}
             alt="imgFourthScreen"
-            style={{ width: "100%", height: "40%" }}
+            style={{
+              width: "100%",
+              height: "40%",
+              borderRadius: "10px",
+              borderBottomRightRadius: "0",
+              borderBottomLeftRadius: 0,
+            }}
           />
         </HolderRightSide>
       </HolderTop>
       <HolderCards>
-        <Card>
+        <Card1>
           <Image width={50} src={userIcon} alt="userIcon" />
           <CardDescription>Sem análise de perfil</CardDescription>
-        </Card>
+        </Card1>
         <HolderDivider>
           <Divider
             style={{
@@ -52,10 +62,10 @@ export const FourthScreen = () => {
             }}
           />
         </HolderDivider>
-        <Card>
+        <Card2>
           <Image width={110} src={carIcon} alt="carIcon" />
           <CardDescription>Carro reserva</CardDescription>
-        </Card>
+        </Card2>
         <HolderDivider>
           <Divider
             style={{
@@ -65,10 +75,10 @@ export const FourthScreen = () => {
             }}
           />
         </HolderDivider>
-        <Card>
+        <Card3>
           <Image width={80} src={cardNameIcon} alt="cardNameIcon" />
           <CardDescription>Sem consulta ao SPC </CardDescription>
-        </Card>
+        </Card3>
         <HolderDivider>
           <Divider
             style={{
@@ -78,10 +88,10 @@ export const FourthScreen = () => {
             }}
           />
         </HolderDivider>
-        <Card>
+        <Card4>
           <Image width={70} src={searchCarIcon} alt="searchCarIcon" />
           <CardDescription>Rastreador para veículos</CardDescription>
-        </Card>
+        </Card4>
         <HolderDivider>
           <Divider
             style={{
@@ -91,10 +101,10 @@ export const FourthScreen = () => {
             }}
           />
         </HolderDivider>
-        <Card>
+        <Card5>
           <Image width={60} src={justiceIcon} alt="searchCarIcon" />
           <CardDescription>Assistência jurídica</CardDescription>
-        </Card>
+        </Card5>
       </HolderCards>
     </FourthScreenHolder>
   );

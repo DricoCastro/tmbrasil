@@ -6,6 +6,7 @@ import { SixthScreen } from "../components/SixthScreen";
 import { ThirdScreen } from "../components/ThirdScreen";
 import Image from "next/image";
 import { HomeHolder, HomeHolderWaveBottom, HomeHolderWaveTop } from "./styles";
+import { SeventhScreen } from "../components/SeventhScreen";
 
 const wave = require("../../../../public/images/wavesDivider.svg");
 
@@ -36,6 +37,7 @@ export const HomePage = () => {
       <HomeHolderWaveTop>
         <Image style={{ width: "100%" }} src={wave} alt="wave" />
       </HomeHolderWaveTop>
+      <SeventhScreen />
     </HomeHolder>
   );
 };

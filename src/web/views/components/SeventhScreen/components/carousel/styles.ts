@@ -22,6 +22,10 @@ export const HolderCarousel = styled.div`
         };
 `;
 
+export const Card = styled.div`
+   margin: auto;
+`;
+
 export const HolderCard = styled.div`
    margin: auto;
 `;

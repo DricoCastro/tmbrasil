@@ -1,72 +1,32 @@
-const logo1 = "/carousel/logo1.png";
-const logo2 = "/carousel/logo2.png";
-const logo3 = "/carousel/logo3.png";
-const logo4 = "/carousel/logo4.png";
-const logo5 = "/carousel/logo5.png";
-const logo6 = "/carousel/logo6.png";
-const logo7 = "/carousel/logo7.png";
-const logo8 = "/carousel/logo8.png";
-const logo9 = "/carousel/logo9.png";
-const logo10 = "/carousel/logo10.png";
-const logo11 = "/carousel/logo11.png";
-const logo12 = "/carousel/logo12.png";
-const logo13 = "/carousel/logo13.png";
-const logo14 = "/carousel/logo14.png";
-const logo15 = "/carousel/logo15.png";
-const logo16 = "/carousel/logo16.png";
+const associate1 = "/carousel-associates/associate-1.jpeg";
+const associate2 = "/carousel-associates/associate-2.jpeg";
+const associate3 = "/carousel-associates/associate-3.jpeg";
+const associate4 = "/carousel-associates/associate-4.jpeg";
+const associate5 = "/carousel-associates/associate-5.jpeg";
+const associate6 = "/carousel-associates/associate-6.jpeg";
 
-const logoData = [
+const AssociatesData = [
     {
-        image: logo1,
+        image: associate1,
     },
     {
-        image: logo2,
+        image: associate2,
     },
     {
-        image: logo3,
+        image: associate3,
     },
     {
-        image: logo4,
+        image: associate4,
     },
     {
-        image: logo5,
+        image: associate5,
     },
     {
-        image: logo6,
+        image: associate6,
     },
-    {
-        image: logo7,
-    },
-    {
-        image: logo8,
-    },
-    {
-        image: logo9,
-    },
-    {
-        image: logo10,
-    },
-    {
-        image: logo11,
-    },
-    {
-        image: logo12,
-    },
-    {
-        image: logo13,
-    },
-    {
-        image: logo14,
-    },
-    {
-        image: logo15,
-    },
-    {
-        image: logo16,
-    },
-    
+
 ]
         
      
 
-export default logoData;
+export default AssociatesData;

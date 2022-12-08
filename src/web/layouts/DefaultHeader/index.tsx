@@ -46,7 +46,9 @@ export const DefaultHeader = () => {
     window.open("https://clubecerto.com.br/");
   }
   function onTapUser() {
-    window.open("https://vscofano.github.io/TM-login/login.html");
+    window.open(
+      "https://vscofano.github.io/pagina-de-login-associado/login.html"
+    );
   }
 
   return (

@@ -11,10 +11,18 @@ import {
   HolderLeftSide,
   BenefictsListItems,
 } from "./styles";
+import { useRouter } from "next/router";
 
 const imgSecondScreen = require("../../../../../public/images/second-screen-img.jpeg");
 
 export const SecondScreen = () => {
+  const brokeLine: string = "%0A";
+  const router = useRouter();
+  function wppText() {
+    router.push(
+      `https://api.whatsapp.com/send?phone=5531994738807&text=😀 Olá,${brokeLine}Olá, vim pelo site e gostaria de solicitar um *Orçamento* para meu veículo.`
+    );
+  }
   return (
     <SecondScreenHolder>
       <HolderLeftSide>
@@ -61,7 +69,7 @@ export const SecondScreen = () => {
             <BenefictsListItems>Comunicação Eficiente</BenefictsListItems>
           </BenefictsList>
         </HolderTexts>
-        <PrimaryButton text="Faça uma cotação agora!" onClick={() => {}} />
+        <PrimaryButton text="Faça uma cotação agora!" onClick={wppText} />
       </HolderRightSide>
     </SecondScreenHolder>
   );

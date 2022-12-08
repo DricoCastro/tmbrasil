@@ -10,10 +10,18 @@ import {
   TextSubtitle,
   TextTitle,
 } from "./styles";
+import { useRouter } from "next/router";
 
 const menImg = require("../../../../../public/images/men-first-screen.png");
 
 export const FirstScreen = () => {
+  const brokeLine: string = "%0A";
+  const router = useRouter();
+  function wppText() {
+    router.push(
+      `https://api.whatsapp.com/send?phone=5531994738807&text=😀 Olá,${brokeLine}Olá, vim pelo site e gostaria de solicitar um *Orçamento* para meu veículo.`
+    );
+  }
   return (
     <FirstScreenHolder>
       <HolderLeftSide>
@@ -29,7 +37,7 @@ export const FirstScreen = () => {
             horas.
           </TextSubtitle>
         </HolderTexts>
-        <PrimaryButton text="Fazer Simulação" onClick={() => {}} />
+        <PrimaryButton text="Fazer Simulação" onClick={wppText} />
       </HolderLeftSide>
       <HolderRightSide>
         <Image src={menImg} alt="men" width={250} />

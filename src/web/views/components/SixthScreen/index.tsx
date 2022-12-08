@@ -7,10 +7,18 @@ import {
   HolderTexts,
   TextTitle,
 } from "./styles";
+import { useRouter } from "next/router";
 
 const imgSixthScreen = require("../../../../../public/images/sixth-screen-img.jpeg");
 
 export const SixthScreen = () => {
+  const brokeLine: string = "%0A";
+  const router = useRouter();
+  function wppText() {
+    router.push(
+      `https://api.whatsapp.com/send?phone=5531994738807&text=😀 Olá,${brokeLine}Olá, vim pelo site e gostaria de solicitar um *Orçamento* para meu veículo.`
+    );
+  }
   return (
     <FourthScreenHolder>
       <HolderRightSide>
@@ -18,7 +26,7 @@ export const SixthScreen = () => {
           <TextTitle>A proteção completa para seu veículo</TextTitle>
           <TextTitle>Solicite uma Cotação já</TextTitle>
         </HolderTexts>
-        <PrimaryButton text="Fazer Simulação Grátis !" onClick={() => {}} />
+        <PrimaryButton text="Fazer Simulação Grátis !" onClick={wppText} />
       </HolderRightSide>
       <HolderLeftSide>
         <Image

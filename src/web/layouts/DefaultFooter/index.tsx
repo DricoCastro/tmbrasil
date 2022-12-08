@@ -24,6 +24,12 @@ export const DeafultFooter = () => {
   function onTapHomePage() {
     router.push("/");
   }
+  const brokeLine: string = "%0A";
+  function wppText() {
+    router.push(
+      `https://api.whatsapp.com/send?phone=5531994738807&text=😀 Olá,${brokeLine}Olá, vim pelo site e gostaria de solicitar um *Orçamento* para meu veículo.`
+    );
+  }
   return (
     <HomeFooterHolder>
       <PanelFooterContainer>
@@ -65,7 +71,7 @@ export const DeafultFooter = () => {
             <span>Vem conversar com a gente</span>
             <PanelFooterBottomSocialMediaContainer>
               <PanelFooterBottomSocialMediaButtonContainer>
-                <Link href="/">
+                <Link href="mailto:thiago@tmbrasilbeneficios.com.br">
                   <PrimaryIcon
                     size="18px"
                     fill={COLORS.scooter}
@@ -74,7 +80,7 @@ export const DeafultFooter = () => {
                 </Link>
               </PanelFooterBottomSocialMediaButtonContainer>
               <PanelFooterBottomSocialMediaButtonContainer>
-                <Link href="/">
+                <Link href="https://www.instagram.com/tmbrasiloficial/">
                   <PrimaryIcon
                     size="18px"
                     fill={COLORS.scooter}
@@ -83,13 +89,13 @@ export const DeafultFooter = () => {
                 </Link>
               </PanelFooterBottomSocialMediaButtonContainer>
               <PanelFooterBottomSocialMediaButtonContainer>
-                <Link href="/">
+                <div onClick={wppText}>
                   <PrimaryIcon
                     size="18px"
                     fill={COLORS.scooter}
                     icon={IconsEnum.WHATSAPP_ICON}
                   />
-                </Link>
+                </div>
               </PanelFooterBottomSocialMediaButtonContainer>
             </PanelFooterBottomSocialMediaContainer>
           </PanelFooterBottomSocialMediaContainerHolder>

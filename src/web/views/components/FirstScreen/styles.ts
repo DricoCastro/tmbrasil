@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { COLORS } from "../../../../../utils/colors";
 
 export const FirstScreenHolder = styled.div`
 display: flex;
@@ -24,7 +25,7 @@ padding-right: clamp(1rem, 10.42vw, 12.5rem);
 
 export const HolderLeftSide = styled.div`
 width:70%;
-margin-bottom:10px;
+margin-bottom:40px;
 @media (max-width: 699px) {
     width:100%;
     display:flex;
@@ -48,12 +49,20 @@ flex-direction:column;
 `;
 
 export const TextTitle = styled.h1`
+a{
+  border-bottom:1px solid ${COLORS.scooter};
+}
 @media (max-width: 1100px) {
     font-size:24px;
   }
 `;
 
 export const TextSubtitle = styled.h2`
+text-align:justify;
+font-size:22px;
+a{
+  border-bottom:1px solid ${COLORS.scooter};
+}
 @media (max-width: 1100px) {
     font-size:20px;
   }

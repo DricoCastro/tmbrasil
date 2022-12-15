@@ -27,14 +27,13 @@ export const FirstScreen = () => {
       <HolderLeftSide>
         <HolderTexts>
           <TextTitle>
-            Proteção Veicular é TM Brasil Clube e Benefícios
+            Pensou em Proteção Veicular? <br /> <br /> Fale com a{" "}
+            <a href="">TM BRASIL CLUBE DE BENEFÍCIOS</a>
           </TextTitle>
-          <Divider
-            style={{ width: "150px", backgroundColor: `${COLORS.scooter}` }}
-          />
           <TextSubtitle>
-            Contar com ATENDIMENTO e toda Segurança através de uma cobertura 24
-            horas.
+            Se você busca tranquilidade de ter a cobertura do seu veículo ou de
+            sua frota 24h por dia, atendimento de qualidade, praticidade no
+            monitoramento dos seus veículos, e muito mais, <a>CONTE CONOSCO!</a>
           </TextSubtitle>
         </HolderTexts>
         <PrimaryButton text="Fazer Simulação" onClick={wppText} />

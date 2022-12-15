@@ -43,21 +43,17 @@ export const SecondScreen = () => {
           <TextTitle>Porque a TM Brasil ?</TextTitle>
           <FirstParagraph>
             A TM Brasil já nasceu de maneira sólida, com o propósito de cuidar
-            dos veículos dos seus clientes, garantindo assim tranquilidade a
-            todos os associados, atendendo suas solicitações de maneira ágil e
-            transparente.
+            de todos os veículos e frotas de nossos associados, garantindo assim
+            tranquilidade, atendendo suas solicitações de forma eficaz. Somos
+            uma associação fundada para ser diferente! O nosso intuito é
+            oferecer aos associados TM Brasil uma garantia de excelência no
+            atendimento. Disponibilizamos a nossa assistência através de uma
+            cobertura 24h por dia, 7 dias por semana, em todo o território
+            nacional! Temos uma equipe preparada para lhe atender e resolver de
+            forma precisa, visando a solução dos problemas, garantindo um
+            atendimento de qualidade, personalizado e diferenciado quando você
+            mais precisa! <br /> <br /> Aqui prezamos sempre por :
           </FirstParagraph>
-          <SecondParagraph>
-            Somos uma associação pensada para ser diferente. Mudamos o conceito
-            de clube de benefícios e proteção veicular,nosso intuito é oferecer
-            aos assciados TM Brasil um Atendimento e toda assistencia através de
-            uma cobertura 24 horas por dia,7 dias por semana em todo o
-            territorio nacional, não importa onde você esteja. Temos uma equipe
-            preparada para te atneder e resolver tudo de forma fácil e
-            rapida,visando a solução de problemas e a minimização dos riscos,
-            garantindo um ATENDIMENTO de qualidade,personalizado e diferenciado
-            quando você mais precisa. Aqui prezamos sempre por :
-          </SecondParagraph>
           <BenefictsList>
             <BenefictsListItems>Comportamento Ético</BenefictsListItems>
             <BenefictsListItems>

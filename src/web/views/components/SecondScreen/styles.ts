@@ -73,6 +73,7 @@ font-size:24px;
 `;
 
 export const FirstParagraph = styled.p`
+text-align:justify;
 font-size:16px;
 font-weight:500;
 @media (max-width: 1100px) {
@@ -81,6 +82,7 @@ font-weight:500;
 `;
 
 export const SecondParagraph = styled.p`
+text-align:justify;
 font-size:16px;
 font-weight:500;
 @media (max-width: 1100px) {

@@ -34,12 +34,14 @@ export const DefaultHeader = () => {
     setDrawer(event.currentTarget);
   }
 
-  function onTapMenu() {
-    alert("Em Construção");
-  }
-
   function onTapHomePage() {
     router.push("/");
+  }
+
+  function onTapPdfPage() {
+    window.open(
+      "https://drive.google.com/file/d/1ok9Bl6ubCYWSkRGH5YYqfWp-YYYDZkl8/view?usp=share_link"
+    );
   }
 
   function onTapCluberCerto() {
@@ -74,7 +76,7 @@ export const DefaultHeader = () => {
             <TitlesHeader>HOME</TitlesHeader>
           </HolderTitleIcon>
 
-          <HolderTitleIcon onClick={onTapMenu}>
+          <HolderTitleIcon onClick={onTapPdfPage}>
             <PrimaryIcon
               size={"16px"}
               icon={IconsEnum.BOOK_ICON}
@@ -83,7 +85,7 @@ export const DefaultHeader = () => {
             <TitlesHeader>Regulamento</TitlesHeader>
           </HolderTitleIcon>
 
-          <HolderTitleIcon onClick={onTapMenu}>
+          <HolderTitleIcon onClick={() => {}}>
             <PrimaryIcon
               size={"20px"}
               icon={IconsEnum.TMBRASIL_ICON}
@@ -92,7 +94,7 @@ export const DefaultHeader = () => {
             <TitlesHeader>TM BRASIL</TitlesHeader>
           </HolderTitleIcon>
 
-          <HolderTitleIcon onClick={onTapMenu}>
+          <HolderTitleIcon onClick={() => {}}>
             <PrimaryIcon
               size={"16px"}
               icon={IconsEnum.BENEFITS_ICON}
@@ -184,7 +186,7 @@ export const DefaultHeader = () => {
               <TitleMenuDrawer>Home</TitleMenuDrawer>
             </MenuItemStyledComponent>
             <Divider style={{ width: "230px" }} />
-            <MenuItemStyledComponent onClick={onTapMenu}>
+            <MenuItemStyledComponent onClick={() => {}}>
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.BOOK_ICON}
@@ -195,7 +197,7 @@ export const DefaultHeader = () => {
 
             <Divider />
 
-            <MenuItemStyledComponent onClick={onTapMenu}>
+            <MenuItemStyledComponent onClick={() => {}}>
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.TMBRASIL_ICON}
@@ -206,7 +208,7 @@ export const DefaultHeader = () => {
 
             <Divider />
 
-            <MenuItemStyledComponent onClick={onTapMenu}>
+            <MenuItemStyledComponent onClick={() => {}}>
               <PrimaryIcon
                 size={"18px"}
                 icon={IconsEnum.BENEFITS_ICON}

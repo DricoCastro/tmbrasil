@@ -51,10 +51,10 @@ export const SecondScreen = () => {
             Somos uma associação pensada para ser diferente. Mudamos o conceito
             de clube de benefícios e proteção veicular,nosso intuito é oferecer
             aos assciados TM Brasil um Atendimento e toda assistencia através de
-            uma cobertura 24 horas por dia,7 dias por semana em todo o
+            uma cobertura 24 horas por dia, 7 dias por semana em todo o
             territorio nacional, não importa onde você esteja. Temos uma equipe
-            preparada para te atneder e resolver tudo de forma fácil e
-            rapida,visando a solução de problemas e a minimização dos riscos,
+            preparada para te atneder e resolver tudo de forma fácil e rapida,
+            visando a solução de problemas e a minimização dos riscos,
             garantindo um ATENDIMENTO de qualidade,personalizado e diferenciado
             quando você mais precisa. Aqui prezamos sempre por :
           </SecondParagraph>

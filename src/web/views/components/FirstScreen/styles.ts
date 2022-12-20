@@ -9,13 +9,10 @@ width:100%;
 margin-bottom:-110px;
 color:${COLORS.white};
 @media (max-width: 1100px) {
-    margin-bottom:-68px;
-  }
-  @media (max-width: 899px) {
-    margin-bottom:-70px;
+    margin-bottom:-110px;
   }
   @media (max-width: 599px) {
-    margin-bottom:0px;
+    margin-bottom:-60px;
   }
 `;
 
@@ -29,7 +26,7 @@ export const HolderLeftSide = styled.div`
   padding-top:80px;
   padding-bottom:200px;
   padding-left: clamp(1rem, 10.42vw, 12.5rem);
-padding-right: clamp(1rem, 10.42vw, 12.5rem);
+  padding-right: clamp(1rem, 10.42vw, 12.5rem);
 @media (max-width: 1100px) {
     padding-left: 15px;
     padding-right: 15px;
@@ -79,6 +76,7 @@ export const Background = styled.div<BackgroundProps>`
   align-items: center;
   justify-content: center;
   width: 100%;
+  height:auto;
   overflow: hidden;
   background-image: url("https://i.postimg.cc/HLzSMrJk/background.jpg");
   background-repeat: no-repeat;

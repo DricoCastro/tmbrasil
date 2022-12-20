@@ -14,6 +14,7 @@ padding-top:30px;
 padding-bottom:30px;
 color:${COLORS.white};
 @media (max-width: 1100px) {
+  flex-direction:column;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -26,7 +27,8 @@ align-items:flex-start;
 justify-content:flex-start;
 width:45%;
 @media (max-width: 1100px) {
-  display:none;
+  width:85%;
+  margin-bottom:30px;
   }
 `;
 
@@ -44,7 +46,6 @@ width:54%;
   width:100%;
   }
   ${PrimaryButtonContainer}{
-    margin-top:20px;
     background-color:${COLORS.white};
    ${PrimaryButtonText}{
     color:${COLORS.black};
@@ -74,29 +75,6 @@ font-size:24px;
 
 export const FirstParagraph = styled.p`
 text-align:justify;
-font-size:16px;
-font-weight:500;
-@media (max-width: 1100px) {
-    font-size:14px;
-  }
-`;
-
-export const SecondParagraph = styled.p`
-text-align:justify;
-font-size:16px;
-font-weight:500;
-@media (max-width: 1100px) {
-    font-size:14px;
-  }
-`;
-
-export const BenefictsList = styled.ul`
-list-style-type: circle;
-width:100%;
-`;
-
-export const BenefictsListItems = styled.li`
-margin-top:5px;
 font-size:16px;
 font-weight:500;
 @media (max-width: 1100px) {

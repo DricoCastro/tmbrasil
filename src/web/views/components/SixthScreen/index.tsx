@@ -2,6 +2,7 @@ import { PrimaryButton } from "../../../components/PrimaryButton";
 import Image from "next/image";
 import {
   FourthScreenHolder,
+  HolderCar,
   HolderLeftSide,
   HolderRightSide,
   HolderTexts,
@@ -10,6 +11,7 @@ import {
 import { useRouter } from "next/router";
 
 const imgSixthScreen = require("../../../../../public/images/sixth-screen-img.jpeg");
+const Car = require("../../../../../public/images/carTwo.png");
 
 export const SixthScreen = () => {
   const brokeLine: string = "%0A";
@@ -26,6 +28,11 @@ export const SixthScreen = () => {
           <TextTitle>A proteção completa para seu veículo</TextTitle>
           <TextTitle>Solicite uma Cotação já</TextTitle>
         </HolderTexts>
+        <HolderCar>
+          {" "}
+          <Image src={Car} width={300} alt="imgSecondScreen" />
+        </HolderCar>
+
         <PrimaryButton text="Fazer Simulação Grátis !" onClick={wppText} />
       </HolderRightSide>
       <HolderLeftSide>

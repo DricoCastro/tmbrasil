@@ -14,6 +14,7 @@ padding-right: clamp(1rem, 10.42vw, 12.5rem);
 padding-top:100px;
 padding-bottom:100px;
 @media (max-width: 1100px) {
+  flex-direction:column-reverse;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -25,10 +26,19 @@ align-items:flex-start;
 justify-content:flex-start;
 width:45%;
 @media (max-width: 1100px) {
-  display:none;
+  width:85%;
+  margin-bottom:30px;
   }
 `;
 
+export const HolderCar = styled.div`
+display:none;
+@media (max-width: 1100px) {
+  display:block;
+  margin-bottom:30px;
+  margin-top:30px;
+  }
+`;
 
 
 export const HolderRightSide = styled.div`

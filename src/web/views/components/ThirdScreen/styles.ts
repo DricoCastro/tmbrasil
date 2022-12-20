@@ -91,9 +91,12 @@ text-align:center;
 `;
 
 export const Information = styled.a`
+width:80px;
 margin-top:10px;
 font-size:10px;
 font-weight:500;
 text-align:center;
-border-bottom:0.5px solid black;
+@media (max-width: 800px) {
+    width:100%;
+  }
 `;

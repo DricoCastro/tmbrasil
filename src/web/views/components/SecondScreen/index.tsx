@@ -4,16 +4,14 @@ import {
   SecondScreenHolder,
   TextTitle,
   FirstParagraph,
-  SecondParagraph,
-  BenefictsList,
   HolderTexts,
   HolderRightSide,
   HolderLeftSide,
-  BenefictsListItems,
 } from "./styles";
 import { useRouter } from "next/router";
 
 const imgSecondScreen = require("../../../../../public/images/second-screen-img.jpeg");
+const Car = require("../../../../../public/images/carOne.png");
 
 export const SecondScreen = () => {
   const brokeLine: string = "%0A";
@@ -40,7 +38,7 @@ export const SecondScreen = () => {
       </HolderLeftSide>
       <HolderRightSide>
         <HolderTexts>
-          <TextTitle>Porque a TM Brasil ?</TextTitle>
+          <TextTitle>Por que a TM Brasil ?</TextTitle>
           <FirstParagraph>
             A TM Brasil já nasceu de maneira sólida, com o propósito de cuidar
             de todos os veículos e frotas de nossos associados, garantindo assim
@@ -52,19 +50,18 @@ export const SecondScreen = () => {
             nacional! Temos uma equipe preparada para lhe atender e resolver de
             forma precisa, visando a solução dos problemas, garantindo um
             atendimento de qualidade, personalizado e diferenciado quando você
-            mais precisa! <br /> <br /> Aqui prezamos sempre por :
+            mais precisa!
           </FirstParagraph>
-          <BenefictsList>
-            <BenefictsListItems>Comportamento Ético</BenefictsListItems>
-            <BenefictsListItems>
-              Defesa dos Interesses dos Associados
-            </BenefictsListItems>
-            <BenefictsListItems>
-              Atitudes Criativas e Inovadoras
-            </BenefictsListItems>
-            <BenefictsListItems>Comunicação Eficiente</BenefictsListItems>
-          </BenefictsList>
         </HolderTexts>
+        <Image
+          src={Car}
+          alt="imgSecondScreen"
+          width={300}
+          style={{
+            marginBottom: "30px",
+            marginTop: "30px",
+          }}
+        />
         <PrimaryButton text="Faça uma cotação agora!" onClick={wppText} />
       </HolderRightSide>
     </SecondScreenHolder>

@@ -6,13 +6,9 @@ display: flex;
 align-items:center;
 justify-content:center;
 width:100%;
-padding-top: 40px;
-margin-bottom:-62px;
-padding-left: clamp(1rem, 10.42vw, 12.5rem);
-padding-right: clamp(1rem, 10.42vw, 12.5rem);
+margin-bottom:-110px;
+color:${COLORS.white};
 @media (max-width: 1100px) {
-    padding-left: 15px;
-    padding-right: 15px;
     margin-bottom:-68px;
   }
   @media (max-width: 899px) {
@@ -24,15 +20,20 @@ padding-right: clamp(1rem, 10.42vw, 12.5rem);
 `;
 
 export const HolderLeftSide = styled.div`
-width:70%;
-margin-bottom:40px;
-@media (max-width: 699px) {
-    width:100%;
-    display:flex;
-    align-items:center;
-    flex-direction:column;
-    justify-content:center;
-    text-align:center;
+  width:100%;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:center;
+  text-align:center;
+  padding-top:80px;
+  padding-bottom:200px;
+  padding-left: clamp(1rem, 10.42vw, 12.5rem);
+padding-right: clamp(1rem, 10.42vw, 12.5rem);
+@media (max-width: 1100px) {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom:-68px;
   }
 `;
 
@@ -58,7 +59,7 @@ a{
 `;
 
 export const TextSubtitle = styled.h2`
-text-align:justify;
+text-align:center;
 font-size:22px;
 a{
   border-bottom:1px solid ${COLORS.scooter};
@@ -68,12 +69,29 @@ a{
   }
 `;
 
-export const HolderRightSide = styled.div`
-width:30%;
-display:flex;
-align-items:center;
-justify-content:center;
-@media (max-width: 699px) {
-    display:none;
-  }
+interface BackgroundProps {
+  url?: string | null;
+}
+
+export const Background = styled.div<BackgroundProps>`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("https://i.postimg.cc/HLzSMrJk/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+`;
+
+export const BackgroundContainerSobBlur = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
 `;

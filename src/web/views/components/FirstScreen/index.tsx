@@ -3,16 +3,15 @@ import { COLORS } from "../../../../../utils/colors";
 import { PrimaryButton } from "../../../components/PrimaryButton";
 import Image from "next/image";
 import {
+  BackgroundContainerSobBlur,
+  Background,
   FirstScreenHolder,
   HolderLeftSide,
-  HolderRightSide,
   HolderTexts,
   TextSubtitle,
   TextTitle,
 } from "./styles";
 import { useRouter } from "next/router";
-
-const menImg = require("../../../../../public/images/men-first-screen.png");
 
 export const FirstScreen = () => {
   const brokeLine: string = "%0A";
@@ -24,23 +23,26 @@ export const FirstScreen = () => {
   }
   return (
     <FirstScreenHolder>
-      <HolderLeftSide>
-        <HolderTexts>
-          <TextTitle>
-            Pensou em Proteção Veicular? <br /> <br /> Fale com a{" "}
-            <a href="">TM BRASIL CLUBE DE BENEFÍCIOS</a>
-          </TextTitle>
-          <TextSubtitle>
-            Se você busca tranquilidade de ter a cobertura do seu veículo ou de
-            sua frota 24h por dia, atendimento de qualidade, praticidade no
-            monitoramento dos seus veículos, e muito mais, <a>CONTE CONOSCO!</a>
-          </TextSubtitle>
-        </HolderTexts>
-        <PrimaryButton text="Fazer Simulação" onClick={wppText} />
-      </HolderLeftSide>
-      <HolderRightSide>
-        <Image src={menImg} alt="men" width={250} />
-      </HolderRightSide>
+      <Background>
+        <BackgroundContainerSobBlur>
+          <HolderLeftSide>
+            <HolderTexts>
+              <TextTitle>
+                Pensou em Proteção Veicular? <br /> <br /> Fale com a{" "}
+                <a href="">TM BRASIL CLUBE DE BENEFÍCIOS!</a>
+              </TextTitle>
+              <TextSubtitle>0800 042 0635 Ligue Agora!</TextSubtitle>
+              <TextSubtitle>
+                Se você busca tranquilidade de ter a cobertura do seu veículo ou
+                de sua frota 24h por dia, atendimento de qualidade, praticidade
+                no monitoramento dos seus veículos, e muito mais,{" "}
+                <a>CONTE CONOSCO!</a>
+              </TextSubtitle>
+            </HolderTexts>
+            <PrimaryButton text="Fazer Simulação" onClick={wppText} />
+          </HolderLeftSide>
+        </BackgroundContainerSobBlur>
+      </Background>
     </FirstScreenHolder>
   );
 };

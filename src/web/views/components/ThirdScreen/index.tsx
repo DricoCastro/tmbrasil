@@ -31,7 +31,7 @@ export const ThirdScreen = () => {
           <CardTitle>Roubo e Furto</CardTitle>
           <CardDescription>
             Proteção contra roubo e furto do seu veículo, com indenização de
-            100% do valor!
+            100% do valor!*
             <br />
             <br />
           </CardDescription>
@@ -42,7 +42,7 @@ export const ThirdScreen = () => {
           <CardTitle>Colisão</CardTitle>
           <CardDescription>
             Cobertura em caso de colisão do seu veículo. Também oferecemos
-            cobertura para terceiros, veja a melhor opçaompara você.
+            cobertura para terceiros, veja a melhor opção para você.
           </CardDescription>
         </Card>
 
@@ -64,16 +64,16 @@ export const ThirdScreen = () => {
           <Image src={broken} alt={"carTheft"} height={100} width={100} />
           <CardTitle>Perda Total</CardTitle>
           <CardDescription>
-            Indenização do associado de 100% do valor do seu veículo.
+            Indenização do associado de 100% do valor do seu veículo.*
             <br />
             <br />
           </CardDescription>
         </Card>
+        <Information>
+          *Valor contratado em contrato e atenção às regras de veículos
+          recuperados e etc.
+        </Information>
       </HolderCards>
-      <Information>
-        Valor contratado em contrato e atenção às regras de veículos recuperados
-        e etc.
-      </Information>
     </ThirdScreenHolder>
   );
 };

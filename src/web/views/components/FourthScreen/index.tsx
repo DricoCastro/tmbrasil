@@ -65,6 +65,7 @@ export const FourthScreen = () => {
         <Card2>
           <Image width={110} src={carIcon} alt="carIcon" />
           <CardDescription>Carro reserva</CardDescription>
+          <a style={{ fontSize: "10px" }}>7, 15 e 30 dias* </a>
         </Card2>
         <HolderDivider>
           <Divider

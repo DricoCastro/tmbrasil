@@ -67,8 +67,8 @@ border-top-right-radius:0;
 width:100%;
 display:flex;
 flex-direction:row;
-justify-content:space-between;
-align-items:stretch;
+justify-content:center;
+align-items:center;
 margin-bottom:30px;
 background-color:${COLORS.white};
 @media (max-width: 699px) {

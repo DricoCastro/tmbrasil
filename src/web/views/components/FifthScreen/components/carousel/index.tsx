@@ -10,7 +10,7 @@ import Image from "next/image";
 export default function ImagesCarousel() {
   const logoCarousel = logoData.map((logo, i) => (
     <HolderCard key={i}>
-      <Image width={150} height={100} src={logo.image} alt="logo" />
+      <Image width={200} height={150} src={logo.image} alt="logo" />
     </HolderCard>
   ));
 

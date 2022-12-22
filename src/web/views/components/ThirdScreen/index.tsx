@@ -10,7 +10,6 @@ import {
   CardTitle,
   Information,
 } from "./styles";
-
 const theft = require("../../../../../public/images/roubo.svg");
 const colision = require("../../../../../public/images/colisao.png");
 const colisionThird = require("../../../../../public/images/dano.png");
@@ -36,7 +35,6 @@ export const ThirdScreen = () => {
             <br />
           </CardDescription>
         </Card>
-
         <Card>
           <Image src={colision} alt={"carTheft"} height={100} width={100} />
           <CardTitle>Colisão</CardTitle>
@@ -45,7 +43,6 @@ export const ThirdScreen = () => {
             cobertura para terceiros, veja a melhor opção para você.
           </CardDescription>
         </Card>
-
         <Card>
           <Image
             src={colisionThird}
@@ -59,7 +56,6 @@ export const ThirdScreen = () => {
             melhor opção para você.
           </CardDescription>
         </Card>
-
         <Card>
           <Image src={broken} alt={"carTheft"} height={100} width={100} />
           <CardTitle>Perda Total</CardTitle>
@@ -69,11 +65,11 @@ export const ThirdScreen = () => {
             <br />
           </CardDescription>
         </Card>
-        <Information>
-          *Valor contratado em contrato e atenção às regras de veículos
-          recuperados e etc.
-        </Information>
       </HolderCards>
+      <Information>
+        *Valor contratado em contrato e atenção às regras de veículos
+        recuperados e etc.
+      </Information>
     </ThirdScreenHolder>
   );
 };

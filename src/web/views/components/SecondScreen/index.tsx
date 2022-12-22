@@ -5,13 +5,15 @@ import {
   TextTitle,
   FirstParagraph,
   HolderTexts,
-  HolderRightSide,
-  HolderLeftSide,
+  HolderInfos,
+  HolderCards,
+  Card,
 } from "./styles";
 import { useRouter } from "next/router";
+const Fade = require("react-reveal/Fade");
 
-const imgSecondScreen = require("../../../../../public/images/second-screen-img.jpeg");
-const Car = require("../../../../../public/images/carOne.png");
+const shieldIcon = require("../../../../../public/icons/shield.png");
+const BandeiraIcon = require("../../../../../public/icons/bandeira.jpeg");
 
 export const SecondScreen = () => {
   const brokeLine: string = "%0A";
@@ -23,47 +25,40 @@ export const SecondScreen = () => {
   }
   return (
     <SecondScreenHolder>
-      <HolderLeftSide>
-        <Image
-          src={imgSecondScreen}
-          alt="imgSecondScreen"
-          style={{
-            borderRadius: "10px",
-            width: "90%",
-            height: "80%",
-            boxShadow:
-              " rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset",
-          }}
-        />
-      </HolderLeftSide>
-      <HolderRightSide>
+      <HolderInfos>
         <HolderTexts>
-          <TextTitle>Por que a TM Brasil ?</TextTitle>
-          <FirstParagraph>
-            A TM Brasil já nasceu de maneira sólida, com o propósito de cuidar
-            de todos os veículos e frotas de nossos associados, garantindo assim
-            tranquilidade, atendendo suas solicitações de forma eficaz. Somos
-            uma associação fundada para ser diferente! O nosso intuito é
-            oferecer aos associados TM Brasil uma garantia de excelência no
-            atendimento. Disponibilizamos a nossa assistência através de uma
-            cobertura 24h por dia, 7 dias por semana, em todo o território
-            nacional! Temos uma equipe preparada para lhe atender e resolver de
-            forma precisa, visando a solução dos problemas, garantindo um
-            atendimento de qualidade, personalizado e diferenciado quando você
-            mais precisa!
-          </FirstParagraph>
+          <Fade delay={150}>
+            <TextTitle>Por que a TM Brasil ?</TextTitle>
+          </Fade>
+          <Fade delay={200}>
+            <FirstParagraph>
+              Oferecemos ao Associado TM Brasil uma garantia de{" "}
+              <a>EXCELÊNCIA</a> no atendimento!
+            </FirstParagraph>
+          </Fade>
         </HolderTexts>
-        <Image
-          src={Car}
-          alt="imgSecondScreen"
-          width={300}
-          style={{
-            marginBottom: "30px",
-            marginTop: "30px",
-          }}
-        />
-        <PrimaryButton text="Faça uma cotação agora!" onClick={wppText} />
-      </HolderRightSide>
+        <HolderCards>
+          <Fade left delay={150}>
+            <Card>
+              <Image width={150} src={shieldIcon} alt={"shieldIcon"} />
+              <a>
+                Cobertura 24H <br /> 7 Dias por semana
+              </a>
+            </Card>
+          </Fade>
+          <Fade right delay={150}>
+            <Card>
+              <Image width={150} src={BandeiraIcon} alt={"shieldIcon"} />
+              <a>
+                Em todo <br /> território nacional
+              </a>
+            </Card>
+          </Fade>
+        </HolderCards>
+        <Fade bottom delay={150}>
+          <PrimaryButton text="Faça uma cotação agora!" onClick={wppText} />
+        </Fade>
+      </HolderInfos>
     </SecondScreenHolder>
   );
 };

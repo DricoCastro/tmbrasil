@@ -47,8 +47,10 @@ flex-direction:column;
 `;
 
 export const TextTitle = styled.h1`
+text-shadow: 2px 2px gray;
 a{
   border-bottom:1px solid ${COLORS.scooter};
+  text-shadow: 2px 2px gray;
 }
 @media (max-width: 1100px) {
     font-size:24px;
@@ -58,7 +60,9 @@ a{
 export const TextSubtitle = styled.h2`
 text-align:center;
 font-size:22px;
+text-shadow: 2px 2px gray;
 a{
+  text-shadow: 2px 2px gray;
   border-bottom:1px solid ${COLORS.scooter};
 }
 @media (max-width: 1100px) {

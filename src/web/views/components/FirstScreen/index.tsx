@@ -1,7 +1,4 @@
-import { Divider } from "@mui/material";
-import { COLORS } from "../../../../../utils/colors";
 import { PrimaryButton } from "../../../components/PrimaryButton";
-import Image from "next/image";
 import {
   BackgroundContainerSobBlur,
   Background,
@@ -12,7 +9,7 @@ import {
   TextTitle,
 } from "./styles";
 import { useRouter } from "next/router";
-
+const Fade = require("react-reveal/fade");
 export const FirstScreen = () => {
   const brokeLine: string = "%0A";
   const router = useRouter();
@@ -27,19 +24,27 @@ export const FirstScreen = () => {
         <BackgroundContainerSobBlur>
           <HolderLeftSide>
             <HolderTexts>
-              <TextTitle>
-                Pensou em Proteção Veicular? <br /> <br /> Fale com a{" "}
-                <a href="">TM BRASIL CLUBE DE BENEFÍCIOS!</a>
-              </TextTitle>
-              <TextSubtitle>0800 042 0635 Ligue Agora!</TextSubtitle>
-              <TextSubtitle>
-                Se você busca tranquilidade de ter a cobertura do seu veículo ou
-                de sua frota 24h por dia, atendimento de qualidade, praticidade
-                no monitoramento dos seus veículos, e muito mais,{" "}
-                <a>CONTE CONOSCO!</a>
-              </TextSubtitle>
+              <Fade delay={200}>
+                <TextTitle>
+                  Pensou em Proteção Veicular? <br /> <br /> Fale com a{" "}
+                  <a href="">TM BRASIL CLUBE DE BENEFÍCIOS!</a>
+                </TextTitle>
+              </Fade>
+              <Fade delay={200}>
+                <TextSubtitle>0800 042 0635 Ligue Agora!</TextSubtitle>
+              </Fade>
+              <Fade delay={200}>
+                <TextSubtitle>
+                  Se você busca tranquilidade de ter a cobertura do seu veículo
+                  ou de sua frota 24h por dia, atendimento de qualidade,
+                  praticidade no monitoramento dos seus veículos, e muito mais,{" "}
+                  <a>CONTE CONOSCO!</a>
+                </TextSubtitle>
+              </Fade>
             </HolderTexts>
-            <PrimaryButton text="Fazer Simulação" onClick={wppText} />
+            <Fade delay={200}>
+              <PrimaryButton text="Fazer Simulação" onClick={wppText} />
+            </Fade>
           </HolderLeftSide>
         </BackgroundContainerSobBlur>
       </Background>

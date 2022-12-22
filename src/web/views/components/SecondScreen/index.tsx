@@ -10,7 +10,6 @@ import {
   Card,
 } from "./styles";
 import { useRouter } from "next/router";
-const Fade = require("react-reveal/Fade");
 
 const shieldIcon = require("../../../../../public/icons/shield.png");
 const BandeiraIcon = require("../../../../../public/icons/bandeira.jpeg");
@@ -27,37 +26,27 @@ export const SecondScreen = () => {
     <SecondScreenHolder>
       <HolderInfos>
         <HolderTexts>
-          <Fade delay={150}>
-            <TextTitle>Por que a TM Brasil ?</TextTitle>
-          </Fade>
-          <Fade delay={200}>
-            <FirstParagraph>
-              Oferecemos ao Associado TM Brasil uma garantia de{" "}
-              <a>EXCELÊNCIA</a> no atendimento!
-            </FirstParagraph>
-          </Fade>
+          <TextTitle>Por que a TM Brasil ?</TextTitle>
+          <FirstParagraph>
+            Oferecemos ao Associado TM Brasil uma garantia de <a>EXCELÊNCIA</a>{" "}
+            no atendimento!
+          </FirstParagraph>
         </HolderTexts>
         <HolderCards>
-          <Fade left delay={150}>
-            <Card>
-              <Image width={150} src={shieldIcon} alt={"shieldIcon"} />
-              <a>
-                Cobertura 24H <br /> 7 Dias por semana
-              </a>
-            </Card>
-          </Fade>
-          <Fade right delay={150}>
-            <Card>
-              <Image width={150} src={BandeiraIcon} alt={"shieldIcon"} />
-              <a>
-                Em todo <br /> território nacional
-              </a>
-            </Card>
-          </Fade>
+          <Card>
+            <Image width={150} src={shieldIcon} alt={"shieldIcon"} />
+            <a>
+              Cobertura 24H <br /> 7 Dias por semana
+            </a>
+          </Card>
+          <Card>
+            <Image width={150} src={BandeiraIcon} alt={"shieldIcon"} />
+            <a>
+              Em todo <br /> território nacional
+            </a>
+          </Card>
         </HolderCards>
-        <Fade bottom delay={150}>
-          <PrimaryButton text="Faça uma cotação agora!" onClick={wppText} />
-        </Fade>
+        <PrimaryButton text="Faça uma cotação agora!" onClick={wppText} />
       </HolderInfos>
     </SecondScreenHolder>
   );

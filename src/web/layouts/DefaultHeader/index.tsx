@@ -40,7 +40,7 @@ export const DefaultHeader = () => {
 
   function onTapPdfPage() {
     window.open(
-      "https://drive.google.com/file/d/1Cfhz0XXINzNMHDjgznJpn5uewp9cT1lx/view?usp=sharing"
+      "https://drive.google.com/file/d/1ok9Bl6ubCYWSkRGH5YYqfWp-YYYDZkl8/view?usp=share_link"
     );
   }
 

@@ -28,6 +28,10 @@ export const SixthScreen = () => {
           <TextTitle>A proteção completa para seu veículo</TextTitle>
           <TextTitle>Solicite uma Cotação já</TextTitle>
         </HolderTexts>
+        <HolderCar>
+          {" "}
+          <Image src={Car} width={300} alt="imgSecondScreen" />
+        </HolderCar>
 
         <PrimaryButton text="Fazer Simulação Grátis !" onClick={wppText} />
       </HolderRightSide>

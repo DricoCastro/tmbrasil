@@ -8,15 +8,15 @@ flex-direction:column;
 width:100%;
 padding-left: clamp(1rem, 10.42vw, 12.5rem);
 padding-right: clamp(1rem, 10.42vw, 12.5rem);
-padding-top:80px;
-padding-bottom:100px;
+padding-top:30px;
+padding-bottom:50px;
 @media (max-width: 1100px) {
   }
 `;
 
 export const FifthScreenTitle = styled.h2`
 cursor:pointer;
-font-size:26px;
+font-size:24px;
 :hover{
   border-bottom:1px solid var(--scooter);
 }
@@ -29,7 +29,7 @@ font-size:26px;
 `;
 
 export const FifthScreenSubTitle = styled.h3`
-font-size:22px;
+font-size:20px;
 @media (max-width: 1100px) {
     font-size:18px;
   }

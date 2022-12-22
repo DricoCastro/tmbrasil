@@ -1,4 +1,7 @@
+import { Divider } from "@mui/material";
+import { COLORS } from "../../../../../utils/colors";
 import { PrimaryButton } from "../../../components/PrimaryButton";
+import Image from "next/image";
 import {
   BackgroundContainerSobBlur,
   Background,

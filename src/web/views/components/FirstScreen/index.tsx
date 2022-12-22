@@ -1,7 +1,4 @@
-import { Divider } from "@mui/material";
-import { COLORS } from "../../../../../utils/colors";
 import { PrimaryButton } from "../../../components/PrimaryButton";
-import Image from "next/image";
 import {
   BackgroundContainerSobBlur,
   Background,
@@ -12,13 +9,13 @@ import {
   TextTitle,
 } from "./styles";
 import { useRouter } from "next/router";
-
 export const FirstScreen = () => {
   const brokeLine: string = "%0A";
   const router = useRouter();
+
   function wppText() {
     router.push(
-      `https://api.whatsapp.com/send?phone=5531994738807&text=😀 Olá,${brokeLine}Olá, vim pelo site e gostaria de solicitar um *Orçamento* para meu veículo.`
+      `https://api.whatsapp.com/send?phone=5531994738807&text=😀 Olá,${brokeLine}Olá, vim pelo site e gostaria de solicitar um Orçamento para meu veículo.`
     );
   }
   return (

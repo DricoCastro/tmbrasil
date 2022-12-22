@@ -42,13 +42,13 @@ export const TextSubTitle = styled.h3`
 
 export const HolderCards = styled.div`
 display: flex;
-align-items:center;
+align-items:stretch;
 justify-content:space-between;
 flex-direction:row;
 width:100%;
 padding-top:15px;
 padding-bottom:15px;
-@media (max-width: 800px) {
+@media (max-width: 830px) {
     flex-direction:column;
   }
 `;
@@ -58,7 +58,7 @@ display: flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
-width:24%;
+width:290px;
 height:350px;
 padding-left:15px;
 padding-right:15px;
@@ -66,13 +66,23 @@ padding-top:5px;
 padding-bottom:5px;
 border:3px solid ${COLORS.scooter};
 border-radius:8px;
-@media (max-width: 800px) {
-    height:auto;
-    width:50%;
+box-shadow: 0 0 .2rem black,
+              0 0 .2rem black,
+              0 0 1.5rem ${COLORS.scooter} ,
+              0 0 0.0rem ${COLORS.scooter},
+              0 0 1.0rem ${COLORS.scooter},
+              inset 0 0 0.5rem ${COLORS.scooter};
+@media (max-width: 1400px) {
+    height:300px;
+    width:240px;
     margin-top:15px;
   }
-  @media (max-width: 499px) {
-    width:80%;
+@media (max-width: 1200px) {
+   width:200px;
+   height:330px;
+  }
+  @media (max-width: 830px) {
+    width:100%;
   }
 
 `;
@@ -91,7 +101,6 @@ text-align:center;
 `;
 
 export const Information = styled.a`
-width:80px;
 margin-top:10px;
 font-size:10px;
 font-weight:500;

@@ -30,6 +30,11 @@ export const DeafultFooter = () => {
       `https://api.whatsapp.com/send?phone=5531994738807&text=😀 Olá,${brokeLine}Olá, vim pelo site e gostaria de solicitar um *Orçamento* para meu veículo.`
     );
   }
+  function onTapPdfPage() {
+    window.open(
+      "https://drive.google.com/file/d/1Cfhz0XXINzNMHDjgznJpn5uewp9cT1lx/view?usp=sharing"
+    );
+  }
   return (
     <HomeFooterHolder>
       <PanelFooterContainer>
@@ -52,7 +57,9 @@ export const DeafultFooter = () => {
               <Link href="/">Home</Link>
             </li>
             <li>
-              <Link href="/">Regulamento</Link>
+              <Link href="https://drive.google.com/file/d/1Cfhz0XXINzNMHDjgznJpn5uewp9cT1lx/view?usp=sharing">
+                Regulamento
+              </Link>
             </li>
             <li>
               <Link href="/">TM Brasil</Link>

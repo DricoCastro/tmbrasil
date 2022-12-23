@@ -27,8 +27,7 @@ export const FirstScreen = () => {
             <HolderTexts>
               <CallNumber>
                 Nossa Assistência 24h:{" "}
-                <a href="tel:08000420635">0800 042 0635</a> Clique e ligue
-                agora!
+                <a href="tel:08000420635">0800 042 0635</a>
               </CallNumber>
               <TextTitle>
                 Pensou em Proteção Veicular? <br /> <br /> Fale com a{" "}

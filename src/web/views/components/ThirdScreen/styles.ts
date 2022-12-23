@@ -80,14 +80,6 @@ box-shadow: 0 0 .2rem black,
   }
 `;
 
-    
-        
-          
-    
-
-        
-    
-  
 export const CardTitle = styled.h1`
 font-size:18px;
 font-weight:700;
@@ -101,8 +93,7 @@ text-align:center;
 
 export const Information = styled.a`
 margin-top:10px;
-font-size:10px;
-font-weight:500;
+font-size:8px;
 
     
           

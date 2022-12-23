@@ -67,8 +67,8 @@ export const ThirdScreen = () => {
         </Card>
       </HolderCards>
       <Information>
-        *Valor contratado em contrato e atenção às regras de veículos
-        recuperados e etc.
+        *Valor contratado em adesão e atenção às regras de veículos recuperados
+        e etc.
       </Information>
     </ThirdScreenHolder>
   );

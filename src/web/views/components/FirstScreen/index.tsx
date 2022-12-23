@@ -7,6 +7,7 @@ import {
   HolderTexts,
   TextSubtitle,
   TextTitle,
+  CallNumber,
 } from "./styles";
 import { useRouter } from "next/router";
 export const FirstScreen = () => {
@@ -24,11 +25,15 @@ export const FirstScreen = () => {
         <BackgroundContainerSobBlur>
           <HolderLeftSide>
             <HolderTexts>
+              <CallNumber>
+                Nossa Assistência 24h:{" "}
+                <a href="tel:08000420635">0800 042 0635</a> Clique e ligue
+                agora!
+              </CallNumber>
               <TextTitle>
                 Pensou em Proteção Veicular? <br /> <br /> Fale com a{" "}
                 <a href="">TM BRASIL CLUBE DE BENEFÍCIOS!</a>
               </TextTitle>
-              <TextSubtitle>0800 042 0635 Ligue Agora!</TextSubtitle>
               <TextSubtitle>
                 Se você busca tranquilidade de ter a cobertura do seu veículo ou
                 de sua frota 24h por dia, atendimento de qualidade, praticidade

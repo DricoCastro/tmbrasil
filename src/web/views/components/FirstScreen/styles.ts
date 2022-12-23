@@ -67,6 +67,22 @@ a{
     font-size:20px;
   }
 `;
+
+export const CallNumber = styled.h2`
+text-align:center;
+font-size:26px;
+font-weight:600;
+color:black;
+text-shadow: 2px 2px gray;
+a{
+  border-bottom:3px solid black;
+}
+@media (max-width: 1100px) {
+    font-size:20px;
+  }
+`;
+
+
 interface BackgroundProps {
   url?: string | null;
 }
@@ -80,7 +96,7 @@ export const Background = styled.div<BackgroundProps>`
   overflow: hidden;
   background-image: url("https://i.postimg.cc/HLzSMrJk/background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100%;
   background-position: center;
 `;
 export const BackgroundContainerSobBlur = styled.div`
@@ -90,5 +106,5 @@ export const BackgroundContainerSobBlur = styled.div`
   justify-content: center;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(2px);
 `;

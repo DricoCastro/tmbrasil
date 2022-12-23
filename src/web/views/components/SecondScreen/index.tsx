@@ -9,6 +9,7 @@ import {
   HolderInfos,
   HolderCards,
   Card,
+  DescritionSection,
 } from "./styles";
 const shieldIcon = require("../../../../../public/icons/shield.png");
 const BandeiraIcon = require("../../../../../public/icons/bandeira.jpeg");
@@ -33,18 +34,24 @@ export const SecondScreen = () => {
         </HolderTexts>
         <HolderCards>
           <Card>
-            <Image width={150} src={shieldIcon} alt={"shieldIcon"} />
+            <Image width={125} src={shieldIcon} alt={"shieldIcon"} />
             <a>
               Cobertura 24H <br /> 7 Dias por semana
             </a>
           </Card>
           <Card>
-            <Image width={150} src={BandeiraIcon} alt={"shieldIcon"} />
+            <Image width={125} src={BandeiraIcon} alt={"shieldIcon"} />
             <a>
               Em todo <br /> território nacional
             </a>
           </Card>
         </HolderCards>
+        <DescritionSection>
+          Com propósito de cuidar de todos os veículos e frotas de nossos
+          associados de forma eficaz! <br /> Temos uma equipe preparada para lhe
+          atender, visando a solução dos problemas, garantindo um atendimento de
+          qualidade, personalizado e diferenciado quando você mais precisa!
+        </DescritionSection>
         <PrimaryButton text="Faça uma cotação agora!" onClick={wppText} />
       </HolderInfos>
     </SecondScreenHolder>

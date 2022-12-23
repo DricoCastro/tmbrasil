@@ -85,10 +85,10 @@ display:flex;
 align-items:center;
 justify-content:center;
 flex-direction:column;
-padding-top:30px;
-padding-bottom:30px;
-padding-left:80px;
-padding-right:80px;
+padding-top:20px;
+padding-bottom:20px;
+padding-left:60px;
+padding-right:60px;
 border-radius:10px;
 height:auto;
 background-color:${COLORS.white};
@@ -108,5 +108,16 @@ box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30p
   width:100%;
   }
   }
-  
   `;
+
+export const DescritionSection = styled.a`
+font-size:20px;
+font-weight:500;
+text-align:center;
+line-height:30px;
+margin-top:10px;
+margin-bottom:40px;
+@media (max-width: 1100px) {
+    font-size:18px;
+  }
+`;

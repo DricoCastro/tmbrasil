@@ -96,7 +96,7 @@ export const Background = styled.div<BackgroundProps>`
   overflow: hidden;
   background-image: url("https://i.postimg.cc/HLzSMrJk/background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size:cover;
   background-position: center;
 `;
 export const BackgroundContainerSobBlur = styled.div`
